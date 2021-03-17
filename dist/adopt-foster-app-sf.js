@@ -272,7 +272,6 @@ if ($('#block-yui_3_17_2_1_1597531847481_3702').length && alert_cnt == 0) {
 var salesforce = new Y.Template.Salesforce({
 baseUrl: "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8",
 oid: "00D4T000000DtBu",});
-alert("getting ready to send lead");
 salesforce.submitTestApplication();
 }
 
