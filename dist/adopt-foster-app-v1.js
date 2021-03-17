@@ -487,8 +487,13 @@ $(document).on(
   }
 );
 
-// formatting of phone fields
+// formatting and fine-tuning of form fields
 try {
+
+// set max lengths for number of cats and number of dogs
+document.getElementById("number-yui_3_17_2_1_1605501008796_420664-field").maxLength = "2";
+document.getElementById("number-yui_3_17_2_1_1605501008796_419956-field").maxLength = "2";
+
 // apartment phone
 $(function() {
 document.getElementById("text-yui_3_17_2_1_1606077467812_478726-field").maxLength = "12";
