@@ -486,3 +486,60 @@ $(document).on(
     }
   }
 );
+
+// formatting of phone fields
+try {
+// apartment phone
+$(function() {
+document.getElementById("text-yui_3_17_2_1_1606077467812_478726-field").maxLength = "12";
+$('#text-yui_3_17_2_1_1606077467812_478726-field').keydown(function(e) {
+var key = e.charCode || e.keyCode || 0;
+$text = $(this);
+if (key !== 8 && key !== 9) {
+if ($text.val().length === 3) {$text.val($text.val() + '-');}
+if ($text.val().length === 7) {$text.val($text.val() + '-');}}
+return (key == 8 || key == 9 || key == 46 || (key >= 48 && key <= 57) || (key >= 96 && key <= 105));
+})
+});
+// primary phone
+$(function() {
+document.getElementById("text-yui_3_17_2_1_1606077467812_479442-field").maxLength = "12";
+$('#text-yui_3_17_2_1_1606077467812_479442-field').keydown(function(e) {
+var key = e.charCode || e.keyCode || 0;
+$text = $(this);
+if (key !== 8 && key !== 9) {
+if ($text.val().length === 3) {$text.val($text.val() + '-');}
+if ($text.val().length === 7) {$text.val($text.val() + '-');}}
+return (key == 8 || key == 9 || key == 46 || (key >= 48 && key <= 57) || (key >= 96 && key <= 105));
+})
+});
+// proper formatting for phone fields
+// secondary phone
+$(function() {
+document.getElementById("text-yui_3_17_2_1_1606077467812_480137-field").maxLength = "12";
+$('#text-yui_3_17_2_1_1606077467812_480137-field').keydown(function(e) {
+var key = e.charCode || e.keyCode || 0;
+$text = $(this);
+if (key !== 8 && key !== 9) {
+if ($text.val().length === 3) {$text.val($text.val() + '-');}
+if ($text.val().length === 7) {$text.val($text.val() + '-');}}
+return (key == 8 || key == 9 || key == 46 || (key >= 48 && key <= 57) || (key >= 96 && key <= 105));
+})
+});
+// proper formatting for phone fields
+// vet phone
+$(function() {
+document.getElementById("text-yui_3_17_2_1_1606077467812_413296-field").maxLength = "12";
+$('#text-yui_3_17_2_1_1606077467812_413296-field').keydown(function(e) {
+var key = e.charCode || e.keyCode || 0;
+$text = $(this);
+if (key !== 8 && key !== 9) {
+if ($text.val().length === 3) {$text.val($text.val() + '-');}
+if ($text.val().length === 7) {$text.val($text.val() + '-');}}
+return (key == 8 || key == 9 || key == 46 || (key >= 48 && key <= 57) || (key >= 96 && key <= 105));
+})
+});
+  
+}
+catch (error) {
+}
