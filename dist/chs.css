@@ -34,3 +34,8 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* create class to hide form fields on custom form loads */
+.formhide {
+  display: none;
+}
