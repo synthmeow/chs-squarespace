@@ -1,10 +1,10 @@
 // contact us salesforce lead code
 
-Y.namespace('Template').Salesforce = Class.create({
+Y.namespace('Template').Salesforce2 = Class.create({
 
     initialize: function (config) {
         this.config = config;
-    },
+    }, 
   
     formatPhone: function(formData) {
         var phoneArr = new Array(formData['phone-area-code'], formData['phone-local-prefix'], formData['phone-local-suffix']);
@@ -89,7 +89,7 @@ submitbuttons.on("click", function() {
 // submit salesforce lead if contact us form
 
 if ($('#block-yui_3_17_2_1_1567872623266_18355').length) {
-var salesforce = new Y.Template.Salesforce({
+var salesforce = new Y.Template.Salesforce2({
 baseUrl: "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8",
 oid: "00D4T000000DtBu",});
 salesforce.submitContactUs();
