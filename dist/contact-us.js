@@ -77,3 +77,24 @@ oid: this.config.oid
         return data;
     }
 });
+
+
+
+Y.on('domready', function() {
+Y.use('event', 'node', function(Y) {
+var submitbuttons = Y.all('input[type=submit]');
+
+submitbuttons.on("click", function() {
+
+// submit salesforce lead if contact us form
+
+if ($('#block-yui_3_17_2_1_1567872623266_18355').length) {
+var salesforce = new Y.Template.Salesforce({
+baseUrl: "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8",
+oid: "00D4T000000DtBu",});
+salesforce.submitContactUs();
+}      
+             
+});
+});
+});
