@@ -1,5 +1,5 @@
 // salesforce class creation for adoption foster application
-
+// for new salesforce class, need to make sure it's uniquely named
 Y.namespace("Template").Salesforce = Class.create({
   initialize: function (config) {
     this.config = config;

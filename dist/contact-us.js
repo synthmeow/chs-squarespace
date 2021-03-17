@@ -1,5 +1,5 @@
 // contact us salesforce lead code
-
+// for new salesforce class, need to make sure it's uniquely named
 Y.namespace('Template').Salesforce2 = Class.create({
 
     initialize: function (config) {
