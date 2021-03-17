@@ -585,12 +585,12 @@ alert_cnt += 1;
       alert_msg += newLine;
       alert_cnt += 1;
     }
-    // address line 1
-    if ($("input[name='address']").val().length == 0) {
-      alert_msg += "Address 1 is required.";
-      alert_msg += newLine;
-      alert_cnt += 1;
-    }
+// address line 1
+if ($("input[name='address']").val().length == 0) {
+alert_msg += "Address 1 is required.";
+alert_msg += newLine;
+alert_cnt += 1;
+}
     // city
     if ($("input[name='city']").val().length == 0) {
       alert_msg += "City is required.";

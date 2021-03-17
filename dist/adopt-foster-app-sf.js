@@ -278,7 +278,7 @@ var salesforce = new Y.Template.Salesforce({
 baseUrl: "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8",
 oid: "00D4T000000DtBu",});
 try {salesforce.submitTestApplication();}
-catch (error) {print("Something went wrong: ", error);}
+catch (error) {alert(error);}
 }  
              
 });
