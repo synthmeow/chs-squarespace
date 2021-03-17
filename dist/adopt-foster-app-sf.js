@@ -262,4 +262,19 @@ Y.namespace("Template").Salesforce = Class.create({
 
 
 
+Y.on('domready', function() {
+Y.use('event', 'node', function(Y) {
+var submitbuttons = Y.all('input[type=submit]');
+// need to modify for mobile devices
+submitbuttons.on("click", function() {
 
+if ($('#block-yui_3_17_2_1_1597531847481_3702').length && alert_cnt == 0) {
+var salesforce = new Y.Template.Salesforce({
+baseUrl: "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8",
+oid: "00D4T000000DtBu",});
+salesforce.submitTestApplication();
+}
+  
+});
+});
+});
