@@ -1,0 +1,36 @@
+.Index-page-content {
+  margin-top: -75px;
+}
+
+/* override form styles for readability */
+
+/* radio buttons */
+.form-wrapper .field-list .field .option {
+  font-size: 15px;
+}
+/* field titles */
+.form-wrapper .field-list .title {
+  font-size: 22px;
+  font-weight: bold;
+}
+/* field captions */
+.form-wrapper .field-list .field .caption {
+  font-size: 14px;
+}
+/* title descriptions */
+.form-wrapper .field-list .description {
+  font-size: 15px;
+}
+/* form fields */
+.form-wrapper .field-list .field .field-element {
+  font-size: 16px;
+  font-family: proxima-nova;
+  font-weight: 400;
+  font-style: normal;
+}
+.form-wrapper .field-list .field .caption .field-element {
+  font-size: 16px;
+  font-family: proxima-nova;
+  font-weight: 400;
+  font-style: normal;
+}
