@@ -68,6 +68,28 @@ Special__c: formData["textarea-yui_3_17_2_1_1579553504342_264549-field"],
 Referral_Source__c: formData["select-yui_3_17_2_1_1579553504342_293469-field"],
 Referral_Source_Other_Description__c: formData["text-yui_3_17_2_1_1579553504342_322850-field"],
 
+Membership_Plan__c: function () {
+  var radios = document.getElementsByName("radio-yui_3_17_2_1_1579484904244_63956-field");
+    for (var i = 0, length = radios.length; i < length; i++) {
+      if (radios[i].checked) {
+        return radios[i].value;
+        break;
+      }
+    }
+  },
+
+Membership_Status__c: function () {
+  var radios = document.getElementsByName("radio-yui_3_17_2_1_1579484904244_12386-field");
+    for (var i = 0, length = radios.length; i < length; i++) {
+      if (radios[i].checked) {
+        return radios[i].value;
+        break;
+      }
+    }
+  },
+
+Additional_Family_Members__c: formData["textarea-yui_3_17_2_1_1579553504342_18437-field"],
+
 oid: this.config.oid
 };
     
