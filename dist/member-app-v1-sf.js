@@ -132,7 +132,7 @@ Y.on("domready", function () {
     // need to modify for mobile devices
     submitbuttons.on("click", function () {
       if (
-        $("#block-yui_3_17_2_1_1597531847481_3702").length &&
+        $("#email-yui_3_17_2_1_1579484904244_20541-field").length &&
         alert_cnt == 0
       ) {
         var salesforce = new Y.Template.Salesforce({
