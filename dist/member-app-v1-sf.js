@@ -135,7 +135,7 @@ Y.on("domready", function () {
         $("#email-yui_3_17_2_1_1579484904244_20541-field").length &&
         alert_cnt == 0
       ) {
-        var salesforce = new Y.Template.Salesforce({
+        var salesforce = new Y.Template.SalesforceMA({
           baseUrl:
             "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8",
           oid: "00D4T000000DtBu"
