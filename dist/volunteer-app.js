@@ -88,8 +88,11 @@ Y.on('domready', function() {
 Y.use('event', 'node', function(Y) {
       var submitbuttons = Y.all('input[type=submit]');
   // need to modify for mobile devices
-      submitbuttons.on("click", function() {
+submitbuttons.on("click", function() {
 
+window.dataLayer.push({
+        'event': 'volunteer_interest_submission'
+});
 
 if ($('#block-yui_3_17_2_1_1569540134907_6351').length) {
 var salesforce = new Y.Template.SalesforceV({
