@@ -15,7 +15,7 @@ Y.namespace('Template').SalesforceV = Class.create({
  
         var formData = this.getFormData();
 
-        console.log(formData);
+
 
 
         var phoneNumber = this.formatPhone(formData)
