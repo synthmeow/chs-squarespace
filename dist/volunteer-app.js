@@ -11,10 +11,12 @@ Y.namespace('Template').SalesforceV = Class.create({
 
     submitVolunteerInterest: function () {
         
-        console.log(formData['checkbox-yui_3_17_2_1_1569540000235_14154-field']);
-        console.log(formData['checkbox-yui_3_17_2_1_1569540000235_14154']);
+
  
         var formData = this.getFormData();
+
+        console.log(formData);
+
 
         var phoneNumber = this.formatPhone(formData)
 

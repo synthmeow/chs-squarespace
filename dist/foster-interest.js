@@ -10,7 +10,10 @@ Y.namespace('Template').SalesforceF = Class.create({
   },
 
   submitVolunteerInterest: function () {
-      var formData = this.getFormData();
+        
+    var formData = this.getFormData();
+
+    console.log(formData);
 
       var phoneNumber = this.formatPhone(formData)
 
