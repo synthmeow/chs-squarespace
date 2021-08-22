@@ -24,7 +24,7 @@ formData['phone-area-code'] +
 formData['phone-local-prefix'] +
 formData['phone-local-suffix'],
 
-Volunteer_Interest__c: (formData['checkbox-yui_3_17_2_1_1569540000235_62822'] == undefined ? 'Not applicable' : formData['checkbox-yui_3_17_2_1_1569540000235_62822'].replace(/, /g,";")),
+Volunteer_Interest__c: (formData['checkbox-yui_3_17_2_1_1569540000235_62822-field'] == undefined ? 'Not applicable' : formData['checkbox-yui_3_17_2_1_1569540000235_62822-field'].replace(/, /g,";")),
 
 lead_source: 'Volunteer Interest',
 oid: this.config.oid
