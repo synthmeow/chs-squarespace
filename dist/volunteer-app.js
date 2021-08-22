@@ -13,7 +13,7 @@ Y.namespace('Template').SalesforceV = Class.create({
         
         console.log(formData['checkbox-yui_3_17_2_1_1569540000235_14154-field']);
         console.log(formData['checkbox-yui_3_17_2_1_1569540000235_14154']);
-
+ 
         var formData = this.getFormData();
 
         var phoneNumber = this.formatPhone(formData)
